@@ -34,14 +34,17 @@ import xml.etree.ElementTree as etree
 
 def get_attr_number(node):
     
-    #loop recursively each tag element
+    # loop recursively each tag element
     for elem in node.iter():
         print(elem)
 
+
 if __name__ == '__main__':
-    #sys.stdin.readline()
-    #xml = sys.stdin.read()
+    # sys.stdin.readline()
+    # xml = sys.stdin.read()
     tree = etree.ElementTree(etree.fromstring(xml_string))
     root = tree.getroot()
     get_attr_number(root)
+
+
 
